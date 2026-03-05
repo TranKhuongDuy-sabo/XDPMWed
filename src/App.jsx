@@ -5,7 +5,7 @@ function App() {
 
   useEffect(() => {
     // Gọi API từ ASP.NET Core Backend
-    fetch('https://trankhuongduy.somee.com/api/products') 
+    fetch('https://api.allorigins.win/raw?url=http://trankhuongduy.somee.com/api/products') 
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
